@@ -1,7 +1,7 @@
 ## SHREC 2025: Protein Shape Classification
 
 This repository contains the NIT Tsuyama College team's codebase for
-the SHREC 2025: Protein Shape Classification track.
+the [SHREC 2025: Protein Shape Classification track](http://shrec2025.drugdesign.fr/).
 
 ### Environment
 
