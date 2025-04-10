@@ -1,5 +1,7 @@
 import csv
 import numpy as np
+import time
+import sys
 
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import Normalizer
@@ -29,14 +31,23 @@ def main():
   pipeline.fit(X_train, y_train)
 
   # Load and predict the test data
+  diff_time = 0
+  n_test_models = 0
   with open('../dataset/test_set.csv', 'r') as file:
     print('protein_id,class_id')
     reader = csv.DictReader(file)
     for row in reader:
       protein_id = row['anonymised_protein_id'].replace('.vtk', '')
+      start_time = time.time()
       descriptor = np.fromfile(f'../dataset/test_set/{protein_id}.dat', dtype=np.float32)
       class_id = pipeline.predict(descriptor.reshape(1, -1))
+      end_time = time.time()
+      diff_time += end_time - start_time
+      n_test_models += 1
       print(f'{protein_id},{class_id[0]}')
+
+  # Print the average time taken for prediction
+  print(f'Average time taken for prediction: {diff_time / n_test_models} [s]', file=sys.stderr)
 
 if __name__ == '__main__':
   main()
