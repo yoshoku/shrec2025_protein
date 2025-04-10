@@ -20,7 +20,7 @@ Build the codebase and prepare the dataset as follows:
 
 ```bash
 $ cd ~
-$ git clone
+$ git clone https://github.com/yoshoku/shrec2025_protein.git
 $ cd shrec2025_protein/bin
 $ cmake ../src
 $ make
