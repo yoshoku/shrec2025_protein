@@ -6,13 +6,13 @@ the [SHREC 2025: Protein Shape Classification track](http://shrec2025.drugdesign
 ### Environment
 
 We run the codebase on Ubuntu 24.04.2 LTS in WSL2 of Windows 11.
-Dependencies are as follows:
+The libraries and tools used are as follows:
 
-- Point Cloud Library (PCL) 1.14.0 or later
-- Eigen 3.4.0 or later
-- CMake 3.15 or later
-- Python 3.13.2 or later
-- scikit-learn 1.6.1 or later
+- Point Cloud Library (PCL) 1.14.0
+- Eigen 3.4.0
+- CMake 3.28.3
+- Python 3.13.2
+- scikit-learn 1.6.1
 
 ### Usage
 
