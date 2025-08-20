@@ -46,6 +46,12 @@ $ cd ../../ml
 $ python main.py > submission.csv
 ```
 
+### Evaluation
+
+The evaluation script and SHREC2025 results are available in the following repository:
+
+https://gitlab.com/ycbtaher/shrec2025
+
 ### License
 
 This project is licensed under the [MIT License](https://github.com/yoshoku/shrec2025_protein/blob/main/LICENSE.txt).
