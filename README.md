@@ -14,6 +14,15 @@ The libraries and tools used are as follows:
 - Python 3.13.2
 - scikit-learn 1.6.1
 
+We install PCL, Eigen and CMake using the apt-get command:
+
+```bash
+$ sudo apt-get install libpcl-dev libeigen3-dev cmake
+```
+
+Furthermore, we use [mise](https://github.com/jdx/mise) to install Python
+and [uv](https://github.com/astral-sh/uv) to install scikit-learn.
+
 ### Usage
 
 Build the codebase and prepare the dataset as follows:
