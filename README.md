@@ -52,7 +52,8 @@ $ find . -name "*.vtk" | sed -e s/\.vtk// | awk '{print $1 ".vtk " $1 ".dat"}' |
 $ cd ../test_set
 $ find . -name "*.vtk" | sed -e s/\.vtk// | awk '{print $1 ".vtk " $1 ".dat"}' | xargs -t -n 2 ../../bin/vtk2feat.bin
 $ cd ../../ml
-$ python main.py > submission.csv
+$ uv sync
+$ uv run main.py > submission.csv
 ```
 
 ### Evaluation
