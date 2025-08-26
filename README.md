@@ -34,14 +34,14 @@ $ cd shrec2025_protein/bin
 $ cmake ../src
 $ make
 $ cd ../dataset
-$ wget http://shrec2025.drugdesign.fr/files/train_set.csv
-$ wget http://shrec2025.drugdesign.fr/files/test_set.csv
+$ wget https://shrec2025.drugdesign.fr/files/train_set.csv
+$ wget https://shrec2025.drugdesign.fr/files/test_set.csv
 $ cd train_set
-$ wget http://shrec2025.drugdesign.fr/files/train_set_vtk.tar.gz
-$ tar xvzf train_set_vtk.tar.gz
+$ wget https://shrec2025.drugdesign.fr/files/train_set.tar.xz
+$ tar Jxvf train_set.tar.xz
 $ cd ../test_set
-$ wget http://shrec2025.drugdesign.fr/files/test_set_vtk.tar.gz
-$ tar xvzf test_set_vtk.tar.gz
+$ wget https://shrec2025.drugdesign.fr/files/test_set.tar.xz
+$ tar Jxvf test_set.tar.xz
 ```
 
 Execute the following command to generate the feature files from the VTK files and the submission file:
